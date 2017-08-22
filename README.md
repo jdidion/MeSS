@@ -3,6 +3,7 @@ R functions for computing Methylation Specificity Scores (MeSSes) from WGBS data
 # Usage
 
 ```R
+source(entropy.R)
 specificity <- cpg_specificity(pos, meth, max.cores=8)
 ```
 
