@@ -17,9 +17,7 @@ Simplification and speed-up of SMART-BS-Seq by Liu et al.
 Rather than starting from multiple .wig files, this script starts from a
 matrix of CpG x sample. The output is a data.frame with the following columns:
 
-* A specificity value [0-1] for each CpG, which Liu interpret as follows:
-< 0.5 == low specificity; 0.5-0.75 == intermediate specificity;
-> 0.75 == high specificity.
+* A specificity value [0-1] for each CpG, which Liu interpret as follows: < 0.5 == low specificity; 0.5-0.75 == intermediate specificity; > 0.75 == high specificity.
 * Median methylation, computed by one-step Tukey biweight.
 * Distance: geometric difference from previous row).
 * DiffEntropy: entropy of difference from previous row).
